@@ -8,6 +8,7 @@ env:
         - MAKEFLAGS="--jobs=2 --max-load=4"
     matrix:
         - IMAGE_NAME=composer
+        - IMAGE_NAME=revproxy
 before_install:
     - >
         if [ ! -z "${DOCKER_EXPERIMENTAL}" ] ; then
