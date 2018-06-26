@@ -9,6 +9,7 @@ env:
     matrix:
         - IMAGE_NAME=composer
         - IMAGE_NAME=revproxy
+        - IMAGE_NAME=docker-client
 before_install:
     - >
         if [ ! -z "${DOCKER_EXPERIMENTAL}" ] ; then
